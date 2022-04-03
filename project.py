@@ -93,16 +93,16 @@ while True:
             print(p)
 
     elif cmd == 'info':
-        print(f'p-max-timeout {max_p_timeout}, cs-max-timeout {max_cs_timeout}')
+        print(f'p-max-timeout {max_p_timeout}, cs-max-timeout {max_cs_timeout}, processes {len(processes)}')
 
     elif cmd == 'time-cs':
-        if int(param) < 10:
+        if not param.isdigit() or int(param) < 10:
             print('Invalid CS timeout!')
             continue
         max_cs_timeout = int(param)
 
     elif cmd == 'time-p':
-        if int(param) < 5:
+        if not param.isdigit() or int(param) < 5:
             print('Invalid p timeout!')
             continue
         max_p_timeout = int(param)
