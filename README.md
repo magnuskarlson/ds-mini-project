@@ -2,12 +2,12 @@
 ## Magnus Karlson
 
 ## Usage
-* py project.py (number of processes)
-* project.sh (number of processes)  
+* py project.py (number of processes)       | Uses simple class calling between processes
+* py project-rpc.py (number of processes)   | Uses sockets between processes to send requests to them
 
 **Example**   
 * py project.py 7  
-* project.sh 7  
+* py project-rpc.py 7
 
 ## Commands
 * list - shows processes and their current state
